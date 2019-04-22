@@ -1,23 +1,16 @@
-import React, { Component } from 'react';
-import logo from '../../logo.svg';
-import '../../scss/App.scss';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Modal } from './Modal.js';
+import { VideoComponent } from './VideoComponent.js';
+import logo from '../logo.svg';
+import '../scss/App.scss';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="fullscreen-bg">
-          <video loop muted autoPlay className="fullscreen-bg__video">
-              <source src="https://ak01-video-cdn.slidely.com/static/junior-fed-test/travel-v2.mp4" />
-          </video>
-        </div>
-        <section className="modal d-none">
-          <div id="modal__wrapper" className="modal__wrapper">
-            <div className="modal__container">
-              <h3 id="modal__header" className="modal__header">Leave us your email :-)</h3>
-            </div> 
-          </div>
-        </section>
+        <VideoComponent />
+        <Modal />
         <main>
           <div className="headlines">
             <h1 className="headlines__main-headline">DON'T PANIC! DON'T PANIC!</h1>
