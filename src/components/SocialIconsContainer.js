@@ -3,26 +3,29 @@ import ReactDOM from 'react-dom';
 
 export class SocialIconsContainer extends React.Component {
 
-	renderIcon(){
-		return (
-			<div className="social-icons__icon-container">
-				<img src="" alt="" className="social-icons__icon" />
-			</div>
-		);
-	}
-
 	renderIcons(){
-		let iconNum = 40;
+		let iconNum = this.props.socialIconImg.length;
 		let icons = [];
 
 		for (let i = 0; i < iconNum; i++){
-			icons.push(this.renderIcon())
+			let socialIconImg = this.props.socialIconImg[i];
+
+			icons.push(this.renderIcon(socialIconImg))
 		}
 
 		return (
 			icons
 		)
 	}
+
+	renderIcon(socialIconImg){
+		return (
+			<div className="social-icons__icon-container">
+				<img src={socialIconImg} alt="" className="social-icons__icon" />
+			</div>
+		);
+	}
+
 
 	render() {
 		return (

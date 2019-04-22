@@ -19,7 +19,7 @@ class App extends React.Component {
       <div>
         <VideoComponent />
         <Modal />
-        <Main />
+        <Main socialIconImgs={this.state.socialIconImgs} />
         <script src="main.js"></script>
       </div>
     );
