@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './scss/App.scss';
+import logo from '../logo.svg';
+import '../scss/App.scss';
 
 class App extends Component {
   render() {
@@ -24,7 +24,7 @@ class App extends Component {
             <h2 className="headlines__sub-headline">Cool stuff here! You've got to see it!'</h2>
           </div>
           <div className="call-to-action">
-            <button className="btn btn--modal">
+            <button id="btn--modal" className="btn">
               Start Now!
             </button>
           </div>
@@ -43,6 +43,7 @@ class App extends Component {
             </div>
           </div>
         </main>
+        <script src="main.js"></script>
       </div>
     );
   }
