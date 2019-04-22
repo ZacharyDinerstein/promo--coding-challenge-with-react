@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { SocialIcon } from './SocialIcon.js';
 
 export class SocialIconsContainer extends React.Component {
 
@@ -9,7 +10,6 @@ export class SocialIconsContainer extends React.Component {
 
 		for (let i = 0; i < iconNum; i++){
 			let socialIconImg = this.props.socialIconImg[i];
-
 			icons.push(this.renderIcon(socialIconImg))
 		}
 
@@ -20,9 +20,7 @@ export class SocialIconsContainer extends React.Component {
 
 	renderIcon(socialIconImg){
 		return (
-			<div className="social-icons__icon-container">
-				<img src={socialIconImg} alt="" className="social-icons__icon" />
-			</div>
+			<SocialIcon imgSrc={socialIconImg} />
 		);
 	}
 
