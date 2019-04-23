@@ -10,7 +10,7 @@ export class SocialIconsContainer extends React.Component {
 
 		for (let i = 0; i < iconNum; i++){
 			let socialIconImg = this.props.socialIconImg[i];
-			icons.push(this.renderIcon(socialIconImg))
+			icons.push(this.renderIcon(socialIconImg, i))
 		}
 
 		return (
@@ -18,9 +18,9 @@ export class SocialIconsContainer extends React.Component {
 		)
 	}
 
-	renderIcon(socialIconImg){
+	renderIcon(socialIconImg, i){
 		return (
-			<SocialIcon imgSrc={socialIconImg} />
+			<SocialIcon imgSrc={socialIconImg} key={i}/>
 		);
 	}
 

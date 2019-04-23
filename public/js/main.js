@@ -1,5 +1,3 @@
-alert('hi');
-
 const createModalFunctionality = () => {
   let modal = document.querySelector('.modal');
 
