@@ -8,7 +8,7 @@ export class ButtonCallToAction extends React.Component {
 			<div className="call-to-action">
 				<button id="btn--modal" 
 					className="btn" 
-					>Start Now!</button>
+					onClick={this.props.onButtonCallToActionClick} >Start Now!</button>
 			</div>
 		);
 	}

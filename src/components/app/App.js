@@ -15,12 +15,17 @@ class App extends React.Component {
 		};
 	}
 
+	toggleModalWindowActive() {
+        const currentState = this.state.modalWindowActive;
+        this.setState({ modalWindowActive: !currentState });
+    };
+
 	render() {
 		return (
 			<div>
 				<VideoComponent />
 				<Modal modalWindowActive={this.state.modalWindowActive} />
-				<Main socialIconImgs={this.state.socialIconImgs} />
+				<Main socialIconImgs={this.state.socialIconImgs} onButtonCallToActionClick={() => this.toggleModalWindowActive()}/>
 				<script src="main.js"></script>
 			</div>
 		);

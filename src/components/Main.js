@@ -10,7 +10,7 @@ export class Main extends React.Component {
 			<div>	
 				<main>
 					<Headlines />
-					<ButtonCallToAction modalWindowActive={this.props.modalWindowActive} />
+					<ButtonCallToAction onButtonCallToActionClick={this.props.onButtonCallToActionClick} />
 					<SocialIconsContainer socialIconImg={this.props.socialIconImgs} />
 				</main>
 			</div>
