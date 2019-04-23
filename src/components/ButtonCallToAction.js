@@ -6,7 +6,9 @@ export class ButtonCallToAction extends React.Component {
 	render() {
 		return (
 			<div className="call-to-action">
-				<button id="btn--modal" className="btn">Start Now!</button>
+				<button id="btn--modal" 
+					className="btn" 
+					>Start Now!</button>
 			</div>
 		);
 	}
