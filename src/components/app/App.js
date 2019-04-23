@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Modal } from './Modal.js';
-import { VideoComponent } from './VideoComponent.js';
-import { Main } from './Main.js';
-import logo from '../logo.svg';
-import '../scss/App.scss';
+import { Modal } from '../Modal.js';
+import { VideoComponent } from '../VideoComponent.js';
+import { Main } from '../Main.js';
+import logo from '../../logo.svg';
+import './App.scss';
 
 class App extends React.Component {
 	constructor(props) {
